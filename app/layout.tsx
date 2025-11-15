@@ -33,7 +33,7 @@ export default function RootLayout({
           <Navbar />
         </div>
 
-        <main className="h-screen place-items-center place-content-center ">{children}</main>
+        <main className="min-h-screen place-items-center place-content-center ">{children}</main>
 
       <Footer />
       </body>
