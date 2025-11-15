@@ -80,7 +80,8 @@ const ServiceDetailPage = async ({ params }) => {
 
   const singleData = services.find((service) => service._id === id);
 
-  return (
+  if(singleData){
+return (
     <div className="max-w-5xl mx-auto py-10 px-4">
       <div className="flex flex-col md:flex-row gap-8 items-stretch">
         {/* Left: Content */}
@@ -106,6 +107,15 @@ const ServiceDetailPage = async ({ params }) => {
       </div>
     </div>
   );
+  }else{
+    return(
+      <>
+      <p>Not Found Service</p>
+      </>
+    )
+  }
+
+  
 };
 
 export default ServiceDetailPage;

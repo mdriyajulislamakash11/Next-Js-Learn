@@ -6,7 +6,6 @@ import { useState } from "react";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
-  console.log(pathname, pathname.includes("dashboard"));
 
   if (!pathname.includes("dashboard")) {
     return (

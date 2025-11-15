@@ -5,8 +5,7 @@ import { usePathname } from "next/navigation";
 
 const Footer = () => {
   const pathname = usePathname();
-  console.log(pathname, pathname.includes("dashboard"));
-
+ 
   if (!pathname.includes("dashboard")) {
     return (
       <footer className="bg-gray-100 text-gray-700 py-10 mt-10">
